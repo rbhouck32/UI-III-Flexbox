@@ -303,6 +303,12 @@ footer p {
   max-width: 1024px;
 }
 
+.main-img {
+  height: 200px;
+  width: 1024px;
+  background-image: url(..\img\services-header.jpg);
+}
+
 .main-info h1 {
   font-size: 35px;
   padding-top: 40px;
@@ -378,4 +384,9 @@ footer p {
 
 footer {
   margin: 4em 0;
+}
+
+#index-link img {
+  width: 204px;
+  padding: 0 0;
 }
