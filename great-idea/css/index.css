@@ -161,9 +161,7 @@ header {
 }
 
 .navigation {
-  width: 65%;
-  padding: 30px;
-  padding-left: 50px;
+  width: 100%;
 }
 
 a {
@@ -174,8 +172,6 @@ a {
 
 .logo {
   width: 25%;
-  padding-right: 50px;
-  padding: 20px;
 }
 
 h1 {
@@ -293,13 +289,18 @@ footer p {
 .nav-wrapper {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  height: 5em;
 }
 
 .main-content {
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  align-items: center;
+  max-width: 1024px;
 }
 
 .main-info h1 {
@@ -308,32 +309,73 @@ footer p {
 }
 
 .main-info p {
-  max-width: 880px;
+  max-width: 1024px;
   padding-bottom: 35px;
 }
 
-.center-content {
+.flex-container {
   display: flex;
-  flex-flow: column wrap;
-  max-width: 880px;
-  max-height: 1100px;
-  padding: 50px;
+  flex-flow: row wrap;
+  max-width: 1024px;
+  height: calc(900px + 8em);
+  align-content: space-between;
   justify-content: space-between;
+  padding: 2em 0;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-.digital-design,
-.ux,
-.digital-market,
-.web-dev,
-.ios-dev,
-.android-dev {
+.flex-card {
   border: 1px solid black;
-  width: 350px;
-  height: 275px;
+  width: calc(50% - 1em);
+  height: 300px;
+  background: #eae9e9;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  padding: 1em 1em;
+}
+
+.flex-card button {
+  border-radius: 10px;
+  width: 200px;
+}
+.flex-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.flex-card h3 {
+  font-size: 1.5em;
 }
 
 .add-content {
   display: flex;
   flex-wrap: nowrap;
-  max-width: 880px;
+  max-width: 1024px;
+  padding-top: 2em;
+
+  justify-content: space-between;
+}
+
+.add-content div {
+  width: calc(50% - 1em);
+}
+
+.services-info-img {
+  width: 100%;
+}
+
+.service-facts ul {
+  list-style: square;
+  line-height: 1.5em;
+  padding-left: 1.4em;
+}
+
+.service-facts p {
+  margin: 1em 0;
+}
+
+footer {
+  margin: 4em 0;
 }
